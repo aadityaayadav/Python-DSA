@@ -13,15 +13,5 @@ for i in range(n):
 
 print("The second largest element in the array is:", second_largest)
 
-smallest = float('inf')
-second_smallest = float('inf')
-for i in range(n):
-    if num[i] < smallest:
-        smallest = num[i]
 
-    elif num[i] < second_smallest and num[i] != smallest:
-        second_smallest = num[i]    
-
-print("The smallest element in the array is:", smallest)
-print("The second smallest element in the array is:", second_smallest)
         

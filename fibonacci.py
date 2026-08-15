@@ -1,8 +1,11 @@
+class solution:
+    def fib(self, n: int) -> int:
+        if n <= 1:
+            return n
+        a, b = 0, 1
+        for _ in range(2, n + 1):
+            a, b = b, a + b
+        return b
 
-def fib(num: int) -> int:
-    if num <= 1:
-        return num
-    else:
-         return fib(num - 1) + fib(num - 2)
 
-print(fib(7))    
+print(solution().fib(3))    
